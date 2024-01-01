@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Lora', serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #4b4947;
+			text-decoration: none;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #F0EDEB;
+		}
+
+		.border {
+			border: 1px solid #4b4947;
+
+		}
+
+		.navMenu a:hover {
+			color: #B2C1A2;
+
+}
+</nav>}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="https://www.notion.so/Home-a16d21638209411ab11b6d3062c872a6"> <i class="fa-solid fa-house" style="color: #4b4947;"></i> Home</a>
+		<a id="studio" onclick="navigate(this.id)" href="https://www.notion.so/Studio-45c4e12189d843bb942d59b51f5e4bcc"> <i class="fa-solid fa-m" style="color: #4b4947;"></i></i> Studio</a>
+		<a id="instagram" onclick="navigate(this.id)" href="https://www.notion.so/Instagram-8d69f7480f984282b777f9328233bcd1"> <i class="fa-brands fa-instagram" style="color: #4b4947;"></i></i> Instagram</a>
+		<a id="projetos" onclick="navigate(this.id)" href="https://www.notion.so/Projetos-38d8a26f796e439e810b682244c1fc9f"><i class="fa-regular fa-pen-to-square" style="color: #4b4947;"></i></i> Projetos</a>
+		<a id="leituras" onclick="navigate(this.id)" href="https://www.notion.so/Leituras-cfbfdc7e10a7474291b8f46b3b218bdd"> <i class="fa-solid fa-book-bookmark" style="color: #4b4947;"></i></i> Leituras</a>
+		<a id="vision board" onclick="navigate(this.id)" href="https://www.notion.so/Vision-board-4439c5311f0b40b281c4918c77e4ac65"> <i class="fa-solid fa-seedling" style="color: #4b4947;"></i></i> Vision Board</a>
+		<a id="habit tracker" onclick="navigate(this.id)" href="https://www.notion.so/Habit-tracker-e64e93b64e4c4d358c46c8303f8ca593"><i class="fa-regular fa-square-check" style="color: #4b4947;"></i></i> Habit Tracker</a>
+		<a id="brain dump" onclick="navigate(this.id)" href="https://www.notion.so/Brain-dump-f7e8ab03528049dc8740b667a0d4fbe7"><i class="fa-regular fa-lightbulb" style="color: #4b4947;"></i></i> Brain Dump</a>
+	
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/Home-a16d21638209411ab11b6d3062c872a6", '_blank').focus();
+			else if (id == "studio")
+				window.open("https://www.notion.so/Studio-45c4e12189d843bb942d59b51f5e4bcc", '_blank').focus();
+			else if (id == "instagram")
+				window.open("https://www.notion.so/Instagram-8d69f7480f984282b777f9328233bcd1", '_blank').focus();
+			else if (id == "projetos")
+				window.open("https://www.notion.so/Projetos-38d8a26f796e439e810b682244c1fc9f", '_blank').focus();
+			else if (id == "leituras")
+				window.open("https://www.notion.so/Leituras-cfbfdc7e10a7474291b8f46b3b218bdd", '_blank').focus();
+			else if (id == "vision board")
+				window.open("https://www.notion.so/Vision-board-4439c5311f0b40b281c4918c77e4ac65", '_blank').focus();
+			else if (id == "habit tracker")
+				window.open("https://www.notion.so/Habit-tracker-e64e93b64e4c4d358c46c8303f8ca593", '_blank').focus();
+			else if (id == "brain dump")
+				window.open("https://www.notion.so/Brain-dump-f7e8ab03528049dc8740b667a0d4fbe7", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
